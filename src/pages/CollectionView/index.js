@@ -103,8 +103,9 @@ export default function CollectionView({light, vibrant, dark}) {
     }
 
     setLoader(false)
-
+    console.log(collection,'collection')
   }
+  
 
   return (
     <>
@@ -136,7 +137,7 @@ export default function CollectionView({light, vibrant, dark}) {
                   <img className="collection-img" onError={(event) => {
                   event.target.classList.add("error-image")
                   event.target.classList.remove("collection-img")
-                  }} src={collectionData[0] ?.first_nft_image_256} alt="No preview available"></img>
+                  }} src={collectionData[0]?.first_nft_image_256} alt="No preview available"></img>
                 }
               </div>
               <div className="details">
